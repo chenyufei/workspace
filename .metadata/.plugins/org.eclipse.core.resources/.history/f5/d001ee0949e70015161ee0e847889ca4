@@ -1,0 +1,45 @@
+package com.ble.blescanner;
+
+import android.app.Activity;
+import android.app.Fragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+public class ScanDeviceFragment extends Fragment {
+
+	private OnNewDeviceAddedListener onNewDeviceAddedListener;
+
+	public interface OnNewDeviceAddedListener {
+		public void onNewDeviceAdded(BleDevice newDevice);
+	}
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		
+		View view = inflater.inflate(R.layout.scan_device_fragment, container, false);
+		
+		 
+		final Button sacn_btn = (Button)
+				return view;
+	}
+
+	@Override
+	@Deprecated
+	public void onAttach(Activity activity) {
+		// TODO Auto-generated method stub
+		super.onAttach(activity);
+
+		try {
+			onNewDeviceAddedListener = (OnNewDeviceAddedListener) activity;
+		} catch (ClassCastException e) {
+			throw new ClassCastException(activity.toString()
+					+ "must implement onNewDeviceAddedListener");
+		}
+	}
+
+}

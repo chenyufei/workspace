@@ -1,0 +1,5 @@
+package com.ble.blescanner;
+
+public class DeviceListFragment extends ListFragment {
+
+}

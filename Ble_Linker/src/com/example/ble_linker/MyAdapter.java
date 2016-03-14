@@ -19,9 +19,14 @@ public class MyAdapter extends BaseAdapter {
 	private Context context;
 
 	public MyAdapter(Context context) {
+		
+		super();
 		this.mInflater = LayoutInflater.from(context);
 		this.context = context;
+		
+		
 	}
+	
 
 	@Override
 	public int getCount() {

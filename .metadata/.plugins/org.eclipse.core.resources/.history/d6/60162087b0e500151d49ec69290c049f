@@ -1,0 +1,7 @@
+package com.BLE.blelinker;
+
+public class BleDevice {
+	
+	private String device_name;
+	private String device_address;
+}

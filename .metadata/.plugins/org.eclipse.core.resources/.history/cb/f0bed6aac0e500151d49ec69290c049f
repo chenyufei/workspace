@@ -1,0 +1,11 @@
+package com.BLE.blelinker;
+
+import java.util.ArrayList;
+
+public class BleDeviceAdapter extends ArrayList<BleDevice> {
+
+	int resource;
+	
+	
+	
+}

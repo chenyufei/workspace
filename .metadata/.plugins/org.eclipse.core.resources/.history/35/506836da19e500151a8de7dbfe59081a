@@ -1,0 +1,5 @@
+package com.example.ble_linker;
+
+public class BleDevice {
+
+}

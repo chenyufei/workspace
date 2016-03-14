@@ -1,0 +1,44 @@
+package com.example.bledevice;
+
+import android.app.Activity;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothManager;
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
+
+public class BleScan extends Activity {
+
+	private final static String TAG = "GetBle";
+	private BluetoothManager bluetoothManager;
+	private BluetoothAdapter mBluetoothAdapter;
+
+	 
+		
+
+	
+	public boolean onSetUp(){
+		
+		 
+		bluetoothManager=	(BluetoothManager)getSystemService(Context.BLUETOOTH_SERVICE);
+		mBluetoothAdapter = bluetoothManager.getAdapter();
+		
+		if(null==bluetoothManager){
+			Log.e(TAG, "null==bluetoothManager");
+		}
+		
+		
+		if (mBluetoothAdapter == null) {
+			Log.e(TAG, "null == mBluetoothAdapter");
+        	return false;
+		}
+		
+		if(!mBluetoothAdapter.isEnabled()){
+			Log.i(TAG, "enable mBluetoothAdapter");
+        	mBluetoothAdapter.enable();
+		}
+		
+		return ture;
+	}
+	 
+}

@@ -1,0 +1,22 @@
+package com.example.ble_linker;
+
+import android.bluetooth.BluetoothManager;
+import android.content.Context;
+
+public class BluetoothLE_Service{
+	
+	private Context context;
+	
+	public BluetoothLE_Service(Context context){
+		this.context = context;
+	}
+	
+	public boolean onSetupBle(){
+
+		final BluetoothManager bluetoothManager =
+				(BluetoothManager)context.getSystemService(Context.BLUETOOTH_SERVICE);
+		 return true;
+	}
+	
+	
+}

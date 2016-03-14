@@ -1,0 +1,7 @@
+package com.BLE.blelinker;
+
+import android.app.Fragment;
+
+public class ScanFragment extends Fragment {
+
+}
