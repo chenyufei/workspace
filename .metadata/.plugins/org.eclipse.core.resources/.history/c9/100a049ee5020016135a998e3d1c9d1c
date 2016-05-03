@@ -1,0 +1,7 @@
+package com.vic.chatclient;
+
+import android.app.Service;
+
+public class ClientService extends Service{
+
+}

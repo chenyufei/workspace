@@ -1,7 +1,0 @@
-package com.BLE.blelinker;
-
-import android.app.ListFragment;
-
-public class BleListFragment extends ListFragment {
-
-}

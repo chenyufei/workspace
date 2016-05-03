@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="false" key="TypeHierarchyViewPart.qualifiednames"/>
+	<item value="3" key="TypeHierarchyViewPart.orientation"/>
+	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
+	<item value="E:\adt-bundle-windows-x86_64\sdk\platforms\android-23\optional" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
+	<item value="480,578" key="UserLibraryLoadSaveDialog.size"/>
 	<section name="GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="false" key="OmitCallToSuper"/>
 	</section>
@@ -46,14 +52,14 @@
 		<item value="582" key="DIALOG_WIDTH"/>
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 		<item value="518" key="DIALOG_HEIGHT"/>
-		<item value="498" key="DIALOG_X_ORIGIN"/>
-		<item value="203" key="DIALOG_Y_ORIGIN"/>
+		<item value="354" key="DIALOG_X_ORIGIN"/>
+		<item value="190" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item value="587" key="DIALOG_WIDTH"/>
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 		<item value="766" key="DIALOG_HEIGHT"/>
-		<item value="637" key="DIALOG_X_ORIGIN"/>
+		<item value="497" key="DIALOG_X_ORIGIN"/>
 		<item value="38" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="SourceActionDialog.methods">
@@ -72,10 +78,33 @@
 		<item value="574" key="DIALOG_WIDTH"/>
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 		<item value="692" key="DIALOG_HEIGHT"/>
-		<item value="643" key="DIALOG_X_ORIGIN"/>
+		<item value="510" key="DIALOG_X_ORIGIN"/>
 		<item value="87" key="DIALOG_Y_ORIGIN"/>
 	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="0" key="index"/>
+	</section>
 	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="nls_accessor_history">
+		<section name="0">
+			<item value="Messages" key="accessorName"/>
+			<item value="=BLEMasterV3/src&lt;com.example.blemasterv3" key="bundlePackage"/>
+			<item value="messages.properties" key="bundleName"/>
+			<item value="=BLEMasterV3/src&lt;com.example.blemasterv3" key="accessorPackage"/>
+		</section>
+		<section name="1">
+			<item value="Messages" key="accessorName"/>
+			<item value="=Wm_Bluttoth/src&lt;com.mars.wm_bluttoth" key="bundlePackage"/>
+			<item value="messages.properties" key="bundleName"/>
+			<item value="=Wm_Bluttoth/src&lt;com.mars.wm_bluttoth" key="accessorPackage"/>
+		</section>
+	</section>
+	<section name="NewPackageWizardPage">
+		<item value="false" key="create_package_info_java"/>
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item value="3" key="pageIndex"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>
@@ -84,5 +113,8 @@
 		<item value="false" key="RemoveFinal"/>
 	</section>
 	<section name="JavaElementSearchActions">
+	</section>
+	<section name="WorkingSetModelAwareSelectionDialog">
+		<item value="true" key="ShowVisibleOnly"/>
 	</section>
 </section>

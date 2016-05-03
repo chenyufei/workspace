@@ -1,0 +1,5 @@
+package com.vic.chatserver;
+
+public class ServerService {
+
+}

@@ -1,7 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-<typeInfo handle="=Ble_Linker/E:\/adt-bundle-windows-x86_64\/sdk\/platforms\/android-23\/android.jar&lt;android.widget(BaseAdapter.class[BaseAdapter" modifiers="1057" timestamp="1445233644188"/>
-<typeInfo handle="=BLELinker/E:\/adt-bundle-windows-x86_64\/sdk\/platforms\/android-23\/android.jar&lt;android.app(ListFragment.class[ListFragment" modifiers="33" timestamp="1445233644188"/>
-<typeInfo handle="=BLELinker/E:\/adt-bundle-windows-x86_64\/sdk\/platforms\/android-23\/android.jar&lt;android.app(Fragment.class[Fragment" modifiers="33" timestamp="1445233644188"/>
-<typeInfo handle="=BLELinker/E:\/adt-bundle-windows-x86_64\/sdk\/platforms\/android-23\/android.jar&lt;java.util(ArrayList.class[ArrayList" modifiers="33" timestamp="1445233644188"/>
-</typeInfoHistroy>
+<typeInfoHistroy/>

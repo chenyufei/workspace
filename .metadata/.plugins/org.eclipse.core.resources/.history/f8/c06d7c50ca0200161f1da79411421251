@@ -1,0 +1,26 @@
+package com.vic.chatserver;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.Button;
+import android.widget.TextView;
+
+
+public class MainActivity extends ActionBarActivity {
+	
+	private Button start_btn = null;
+	private TextView address_tx =null;
+	 
+	
+	
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        
+    }
+
+   
+}

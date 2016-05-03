@@ -82,28 +82,17 @@ public class BleScan extends Activity {
 	// Device scan callback.
 	private BluetoothAdapter.LeScanCallback mLeScanCallback = new BluetoothAdapter.LeScanCallback() {
 		@Override
-		public void onLeScan(final BluetoothDevice device, int rssi,
+		public void onLeScan(final BluetoothDevice device, final int rssi,
 				byte[] scanRecord) {
 			mHandler.postDelayed(new Runnable() {
 				@Override
 				public void run() {
-					// mLeDeviceListAdapter.addDevice(device);
-					// mLeDeviceListAdapter.notifyDataSetChanged();
+					MainActivity.aa.addDevice(device, rssi); 
 //					String a = device.getName();
 //					if(!(null==a))
 //					MainActivity.devicename.setText(a);
 					
-					String a = device.getName();
-					boolean repeat = false;
-					if(null !=  MainActivity.devices)
-					for(String b : MainActivity.devices)
-					{
-						if(b==a)
-							repeat = true;
-							//return; 
-					}
-					if(!repeat)
-						ScanDeviceFragment.onNewDeviceAddedListener.onNewDeviceAdded(a);
+					
 				}
 			}, SCAN_PERIOD);
 		}

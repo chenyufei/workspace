@@ -1,0 +1,69 @@
+package com.example.blemasterv3;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import android.app.ExpandableListActivity;
+import android.os.Bundle;
+import android.widget.ExpandableListAdapter;
+import android.widget.SimpleExpandableListAdapter;
+
+/**
+ * For a given BLE device, this Activity provides the user interface to connect, display data,
+ * and display GATT services and characteristics supported by the device.  The Activity
+ * communicates with {@code BluetoothLeService}, which in turn interacts with the
+ * Bluetooth LE API.
+ */
+public class DeviceControlActivity extends ExpandableListActivity {
+    private static final String NAME = "NAME";  
+    private static final String IS_EVEN = "UUID";  
+    
+    private ExpandableListAdapter madapter;
+	
+	//定义两个List用来控制Group和Child中的String
+	
+	private  ArrayList<HashMap<String, String>> gattServiceData = new ArrayList<HashMap<String, String>>();
+     private List<List<HashMap<String, String>>> gattCharacteristicData = new ArrayList<List<HashMap<String, String>>>();
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		
+		
+		
+		for(int i=0; i< 5; i++){
+	    	
+			HashMap<String, String> curGroupMap = new HashMap<String, String>();
+			gattServiceData.add(curGroupMap);
+			curGroupMap.put(NAME, "group"+i);
+			
+			
+			List<Map<String,String>> children = new ArrayList<Map<String, String>>();
+			for(int j=0;j<3;j++){
+				HashMap<String, String> curchildMap = new HashMap<String, String>();
+				children.add(curchildMap);
+				curchildMap.put(IS_EVEN, "child"+i);
+			}			
+			gattCharacteristicData.addAll((Collection<? extends List<HashMap<String, String>>>) children);
+	     }
+		
+		madapter= new SimpleExpandableListAdapter(this, gattServiceData, android.R.layout.simple_expandable_list_item_2, 
+				new String[]{ NAME, IS_EVEN}, new int[]{ android.R.id.text1, android.R.id.text2}, 
+				gattCharacteristicData, android.R.layout.simple_expandable_list_item_2, 
+				new String[] {NAME, IS_EVEN}, new int[] {android.R.id.text1, android.R.id.text2});
+		
+		setListAdapter(madapter);
+		
+		
+		
+	}
+     
+     
+     
+ 
+}
+
+	

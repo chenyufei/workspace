@@ -1,0 +1,7 @@
+package com.vic.chatserver;
+
+import android.app.Service;
+
+public class ServerService extends Service{
+
+}

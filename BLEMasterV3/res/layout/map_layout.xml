@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#d3c6a6" >
+
+        <Button
+            android:id="@+id/beacon_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="20dp"
+            android:layout_y="20dp"
+            android:text="beacon01" />
+
+        <Button
+            android:id="@+id/beacon_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="480dp"
+            android:layout_y="20dp"
+            android:text="beacon02" />
+
+        <Button
+            android:id="@+id/beacon_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="20dp"
+            android:layout_y="520dp"
+            android:text="beacon03" />
+
+        <Button
+            android:id="@+id/beacon_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="480dp"
+            android:layout_y="520dp"
+            android:text="beacon04" />
+    </AbsoluteLayout>
+
+</LinearLayout>

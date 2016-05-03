@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- the first tab -->
+
+            <LinearLayout
+                android:id="@+id/tab01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <Button
+                    android:id="@+id/scan_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="scan" />
+
+                <fragment
+                    android:id="@+id/DeviceListFragment"
+                    android:name="com.example.blemasterv3.DeviceListFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!-- the second tab -->
+
+            <LinearLayout
+                android:id="@+id/tab02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                 >
+
+                <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#d3c6a6" >
+
+        <Button
+            android:id="@+id/beacon_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="20dp"
+            android:layout_y="20dp"
+            android:text="ble1" />
+
+        <Button
+            android:id="@+id/beacon_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="480dp"
+            android:layout_y="20dp"
+            android:text="ble2" />
+
+        <Button
+            android:id="@+id/beacon_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="20dp"
+            android:layout_y="520dp"
+            android:text="ble3" />
+
+        <Button
+            android:id="@+id/beacon_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="480dp"
+            android:layout_y="520dp"
+            android:text="ble4" />
+        <Button 
+            android:id="@+id/position_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="here"
+            android:background="#c23c26"
+            android:visibility="invisible"/>
+    </AbsoluteLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/locate_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="locate" />
+
+                    <TextView
+                        android:id="@+id/location_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:hint="click button to locate" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- the third tab -->
+
+            <LinearLayout
+                android:id="@+id/tab03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tab3" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
